@@ -1,0 +1,80 @@
+@import '../../style/mixins';
+@import '../../style/variables';
+@import '../../style/theme';
+
+#welcome-light, #welcome-dark {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  font-weight: 400;
+  padding: 0rem 3rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the welcome section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  @include respond(phone) {
+    padding: 0rem 1rem;
+  }
+
+  .welcome-message {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    @include respond(phone-xs) {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-right: 5rem;
+      font-size: 5rem;
+      transition: all 0.5s ease-in;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      @include respond(phone) {
+        padding-right: 0rem;
+        padding: 0rem 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+#header-light {
+  background-color: $light-theme-secondary;
+
+  li a:hover {
+    background-color: $light-theme-primary;
+  }
+}
+
+#header-dark {
+  background-color: $dark-theme-secondary;
+  color: $dark-theme-accent;
+
+  li a {
+    color: $dark-theme-accent;
+  }
+
+  li a:hover {
+    background-color: $dark-theme-primary;
+  }
+
+  button {
+    color: $dark-theme-accent;
+  }
+}
+
+#welcome-light {
+  background: $light-theme-primary;
+  color: $light-theme-accent;
+
+  a {
+    color: $light-theme-accent;
+  }
+}
+
+#welcome-dark {
+  background: $dark-theme-primary;
+  color: $dark-theme-accent;
+
+  a {
+    color: $dark-theme-accent;
+  }
+}
+
+#about-light {
+  background-color: $light-theme-secondary;
+  color: $light-theme-accent;
+
+  .button {
+    color: $light-theme-accent;
+    border: 2px solid $light-theme-accent;
+
+    &:hover {
+      &::after {
+        background: $light-theme-primary;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#about-dark {
+  background-color: $dark-theme-secondary;
+  color: $dark-theme-accent;
+
+  .button {
+    color: $dark-theme-accent;
+    border: 2px solid $dark-theme-accent;
+
+    &:hover {
+      &::after {
+        background: $dark-theme-primary;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#projects-light {
+  background-color: $light-theme-primary;
+  color: $light-theme-accent;
+
+  & a {
+    color: $light-theme-accent;
+  }
+}
+
+#projects-dark {
+  background-color: $dark-theme-primary;
+  color: $dark-theme-accent;
+
+  & a i {
+    color: $dark-theme-accent;
+  }
+}
+
+#footer-light {
+  background-color: $light-theme-secondary;
+  color: $light-theme-accent;
+}
+
+#footer-dark {
+  background-color: $dark-theme-secondary;
+  color: $dark-theme-accent;
+}

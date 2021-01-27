@@ -1,0 +1,26 @@
+@import '../../style/mixins';
+@import '../../style/variables';
+@import '../../style/theme';
+
+#footer-light, #footer-dark {
+  padding: 2rem 0;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  &__text {
+    color: darken(white, 50%);
+    font-size: 1.5rem;
+  }
+}
+
+.back-to-top i {
+  margin: 1rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

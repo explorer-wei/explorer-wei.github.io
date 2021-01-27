@@ -1,0 +1,36 @@
+@import '../../style/mixins';
+@import '../../style/variables';
+@import '../../style/theme';
+
+#header-light, #header-dark {
+  padding: 1rem 0;
+  display: flex;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .button {
+    font-size: 3rem;  
+    background-color: transparent;
+    border: none;
+  }
+}

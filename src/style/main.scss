@@ -1,0 +1,15 @@
+@import './mixins';
+@import './variables';
+@import './typography.scss';
+@import './theme.scss';
+@import './sections';
+@import './toolkit/font-awesome.min.css';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
