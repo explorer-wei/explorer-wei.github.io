@@ -3,24 +3,18 @@
 @import '../../style/theme';
 
 #footer-light, #footer-dark {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  text-align: center;
 
-  @include respond(phone) {
-    border: 0px;
-  }
+  .back-to-top i {
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 
-  &__text {
-    color: darken(white, 50%);
-    font-size: 1.5rem;
-  }
-}
-
-.back-to-top i {
-  margin: 1rem;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-
-  &:hover {
-    transform: translateY(-2px);
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }
+
+

@@ -45,7 +45,7 @@
   background-color: $light-theme-secondary;
   color: $light-theme-accent;
 
-  .button {
+  #resume-button {
     color: $light-theme-accent;
     border: 2px solid $light-theme-accent;
 
@@ -62,7 +62,7 @@
   background-color: $dark-theme-secondary;
   color: $dark-theme-accent;
 
-  .button {
+  #resume-button {
     color: $dark-theme-accent;
     border: 2px solid $dark-theme-accent;
 
@@ -79,6 +79,10 @@
   background-color: $light-theme-primary;
   color: $light-theme-accent;
 
+  .project-card {
+    background-color: $light-theme-secondary;
+  }
+
   & a {
     color: $light-theme-accent;
   }
@@ -87,6 +91,10 @@
 #projects-dark {
   background-color: $dark-theme-primary;
   color: $dark-theme-accent;
+
+  .project-card {
+    background-color: $dark-theme-secondary;
+  }
 
   & a i {
     color: $dark-theme-accent;

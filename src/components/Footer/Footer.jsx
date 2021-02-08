@@ -15,7 +15,7 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
-        <p className="footer__text">© 2020 - Last Updated by Wei Huang</p>
+        <p className="footer_text">© 2020 - Last Updated by Wei Huang</p>
       </Container>
     </footer>
   );
